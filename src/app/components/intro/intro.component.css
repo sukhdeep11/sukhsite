@@ -18,12 +18,13 @@ h1 {
     color: white;
     -webkit-text-stroke: 2px #01fe87;
     position: relative;
+    display: inline-block;
 }
 
 .singh::before{
     content: attr(data-text);
     position: absolute;
-    top: -4px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -51,4 +52,6 @@ h1 {
         font-size: calc(8vw + 3rem);
        
     }
+   
+    
 }
