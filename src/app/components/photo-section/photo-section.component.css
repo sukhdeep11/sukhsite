@@ -1,0 +1,21 @@
+.photoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.photoContainer img{
+    width: calc(100% - 4rem);
+    margin: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .photoContainer{
+        grid-template-columns: 1fr;
+    }
+    
+    .photoContainer img{
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+    }
+}

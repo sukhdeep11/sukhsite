@@ -1,1 +1,8 @@
-<p>slider works!</p>
+<div class="sContainer">
+    <img class="sEiffel" [ngClass]="toggle ? 'sEiffelBack' : 'sEiffel'"
+        src="https://res.cloudinary.com/sukhdeeprayat/image/upload/v1624022876/sukhSite/s-eiffel_gkevoo.png" alt="">
+    <img class="sMain" (click)="toggleSlide()"
+        src="https://res.cloudinary.com/sukhdeeprayat/image/upload/v1624022868/sukhSite/s-main_hcymoy.png" alt="">
+    <img class="sNature" [ngClass]="toggle ? 'sNatureBack' : 'sNature'"
+        src="https://res.cloudinary.com/sukhdeeprayat/image/upload/v1624022881/sukhSite/s-nature_rcoe5m.png" alt="">
+</div>

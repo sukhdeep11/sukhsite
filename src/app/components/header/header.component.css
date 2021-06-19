@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    height: 7rem;
+}
+
+.stickerImg img{
+    width: 5rem;
+    margin: 0.5rem auto;
+}

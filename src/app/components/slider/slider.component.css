@@ -1,0 +1,167 @@
+.sContainer {
+    position: relative;
+    background-color: white;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.sMain{
+    width: 20%;
+    position: relative; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    user-select: none;
+}
+.sNature, .sEiffel{
+    width: 20%;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+/* class back */
+
+/* .sNatureBack, .sEiffelBack{
+    width: 20%;
+    position: absolute; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+} */
+
+.sMain{
+    z-index: 1;
+}
+
+.sEiffel{
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: transform 3s linear;
+    /* animation-delay: 2s; */
+}
+.sEiffelBack{
+    animation-name: fadeInLeftBack;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: transform 3s linear;
+    /* animation-delay: 2s; */
+}
+
+
+.sNature{
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: transform 3s linear;
+    /* animation-delay: 2s; */
+    
+}
+.sNatureBack{
+    animation-name: fadeInRightBack;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: transform 3s linear;
+    /* animation-delay: 2s; */
+    
+}
+
+
+@keyframes fadeInLeft {
+    0%   {left: 50%;}
+    100% {
+        left: 15%;
+        transform: translate(0, 0);
+    }
+  }
+
+@keyframes fadeInRight {
+    0%   {left: 50%;}
+    100% {
+        left: 85%;
+        transform: translate(-100%, 0);
+    }
+  }
+
+  /* Slide Animation Back */
+@keyframes fadeInLeftBack {
+    0%   {left: 15%;
+        transform: translate(0, 0);
+        }
+    100% {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+  }
+
+@keyframes fadeInRightBack {
+    0%   {left: 85%;
+        transform: translate(-100%, 0);
+        }
+    100% {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+  }
+
+
+    .bgWhite{
+        background-color: white;
+    }
+
+    .bgDark{
+        background-color: rgb(44, 40, 40);
+    }
+
+
+  /* resposive for mobile */
+
+  @media only screen and (max-width: 600px) {
+   
+    .sContainer img{
+        width: 60%;
+    }
+    @keyframes fadeInLeft {
+        0%   {left: 50%;}
+        100% {
+            left: 0;
+            transform: translate(0, 0);
+        }
+      }
+
+    @keyframes fadeInLeftBack {
+        0%   {left: 0;
+            transform: translate(0%, 0);}
+        100% {
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+      }
+    
+    
+    @keyframes fadeInRight {
+        0%   {left: 50%;}
+        100% {
+              left: 100%;
+              transform: translate(-100%, 0);
+            
+        }
+      }
+
+    @keyframes fadeInRightBack {
+        0%   {left: 100%;
+            transform: translate(-100%, 0);}
+        100% {
+              left: 50%;
+              transform: translate(-50%, 0);
+            
+        }
+      }
+
+    
+
+  }
