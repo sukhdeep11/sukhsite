@@ -9,6 +9,7 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
+  instagram = "https://instagram.com/sukhdeeprayat";
   ngOnInit(): void {
   }
 
