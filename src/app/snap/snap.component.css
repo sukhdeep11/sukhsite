@@ -1,0 +1,140 @@
+.snapDiv{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+}
+
+.snapDiv .sukhImg{
+    position: absolute;
+    width: 20%;
+    transform-origin: right;
+    top: 0;
+    left: 50%;
+    transform:translate(-50%,0);
+}
+
+.snapDiv .imgLeft{
+    animation-name: iLeft;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes iLeft {
+    0%{}
+    100%{
+    transform: translate(-50px);
+    opacity: 0;
+    filter: blur(10px);
+    }
+}
+
+.imgReverse{
+    animation-name: iReverse;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes iReverse {
+    0%{
+    transform: translate(50px);
+    opacity: 0;
+    filter: blur(10px);
+    }
+    100%{
+    transform: translateX(-50%);
+    left: 50%;
+    opacity: 100%;
+    filter: blur(0px);
+    }
+}
+
+/* noise */
+
+.noise{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform:translate(-50%,0);
+    width: 600px;
+    height: 600px;
+    transform: translateX(400px) scaleX(0);
+    transform-origin: left;
+    text-align: center;
+    animation-fill-mode: forwards;
+}
+
+.noiseRight{
+    animation-name: noiseLeft;
+    animation-duration: 8s;
+    transform:translate(-400px) scaleX(1.3);
+}
+
+@keyframes noiseLeft {
+    0%   {transform: translateX(400px) scaleX(0);
+        }
+    98% {
+        transform:translate(-400px) scaleX(1.2);;
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+  }
+
+  .noiseReverse{
+    animation-name: nReverse;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes nReverse {
+            0%   {transform: translateX(-400px) scaleX(1.2);
+            opacity: 0;
+            }
+        98% {
+            transform:translate(400px) scaleX(0);;
+            opacity: 70%;
+        }
+        100%{
+            opacity: 0;
+            display: none;
+        }
+  }
+
+
+
+  .gauntlet{
+    background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_idle.png');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    cursor: pointer;
+
+  }
+
+  .gauntletRun{
+    animation-name: gRun;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes gRun{
+      99%{
+           background-image: url('../../assets/snap.gif');
+        }
+      100%{
+        background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_idle.png');
+      }
+  }
+
+
+

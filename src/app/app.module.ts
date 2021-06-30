@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PhotoSectionComponent } from './components/photo-section/photo-section.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ParallaxComponent } from './components/parallax/parallax.component';
+import { PxsuffixPipe } from './pipe/pxsuffix.pipe';
+import { SnapComponent } from './snap/snap.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SliderComponent } from './components/slider/slider.component';
     HomeComponent,
     FooterComponent,
     PhotoSectionComponent,
-    SliderComponent
+    SliderComponent,
+    ParallaxComponent,
+    PxsuffixPipe,
+    SnapComponent
   ],
   imports: [
     BrowserModule,
