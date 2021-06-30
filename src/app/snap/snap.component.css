@@ -22,6 +22,20 @@
 
 }
 
+.sukhdeep{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: #fefeff;
+    font-size: 14rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: -8px -8px 12px rgba(247, 244, 244, 0.4),8px 8px 12px rgba(0,0,0,0.08);
+    caret-color: #262626;
+    outline: none;
+}
+
 @keyframes iLeft {
     0%{
   
@@ -182,6 +196,11 @@
 
     .gauntlet{
         bottom: 12rem;
+    }
+
+    .sukhdeep{
+        font-size: 7rem;
+        top: 30%;
     }
 
   }
