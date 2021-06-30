@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 
 }
 
@@ -40,6 +39,7 @@
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+    opacity: 0;
 }
 
 @keyframes iReverse {
@@ -47,7 +47,6 @@
     transform: translate(50px);
     opacity: 0;
     filter: blur(10px);
-  
     }
     100%{
     transform: translateX(-50%);
