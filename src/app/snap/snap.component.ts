@@ -17,7 +17,7 @@ export class SnapComponent implements OnInit {
 
 
     if (this.snap == 2) {
-      this.snap = this.snap + 1;;
+      this.snap = this.snap - 1;;
       console.log(this.snap);
     }
     else {

@@ -1,7 +1,6 @@
 <div class="snapDiv">
     <img src="https://res.cloudinary.com/sukhdeeprayat/image/upload/v1624022868/sukhSite/s-main_hcymoy.png" alt=""
-        class="sukhImg" [ngClass]="{'imgLeft':snap == 1}" [ngClass]="{'imgReverse':snap == 2}">
-    <img src="../../assets/noise.png" alt="" class="noise" [ngClass]="{'noiseRight':snap==1}"
-        [ngClass]="{'noiseReverse':snap == 2}">
+        class="sukhImg" [ngClass]="{'imgLeft':snap == 1,'imgReverse':snap == 2}">
+    <img src="../../assets/noise.png" alt="" class="noise" [ngClass]="{'noiseRight':snap==1,'noiseReverse':snap == 2}">
     <div class="gauntlet" (click)="letsSnap()" [ngClass]="{'gauntletRun':snap==1}"></div>
 </div>

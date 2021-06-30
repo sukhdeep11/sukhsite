@@ -138,3 +138,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    .snapDiv .sukhImg{
+        width: 60%;
+    }
+
+  }
