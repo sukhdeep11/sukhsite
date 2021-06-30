@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    /* background-color: tomato; */
+
 }
 
 .snapDiv .sukhImg{
@@ -19,14 +19,18 @@
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
+
 }
 
 @keyframes iLeft {
-    0%{}
+    0%{
+  
+    }
     100%{
     transform: translate(-50px);
     opacity: 0;
     filter: blur(10px);
+
     }
 }
 
@@ -42,6 +46,7 @@
     transform: translate(50px);
     opacity: 0;
     filter: blur(10px);
+  
     }
     100%{
     transform: translateX(-50%);
@@ -64,20 +69,24 @@
     transform-origin: left;
     text-align: center;
     animation-fill-mode: forwards;
+
 }
 
 .noiseRight{
     animation-name: noiseLeft;
     animation-duration: 8s;
     transform:translate(-400px) scaleX(1.3);
+
 }
 
 @keyframes noiseLeft {
     0%   {transform: translateX(400px) scaleX(0);
+
         }
     98% {
         transform:translate(-400px) scaleX(1.2);;
         opacity: 100%;
+       
     }
     100%{
         opacity: 0;
@@ -93,8 +102,10 @@
   }
 
   @keyframes nReverse {
-            0%   {transform: translateX(-400px) scaleX(1.2);
+            0%   {
+            transform: translateX(-400px) scaleX(1.2);
             opacity: 0;
+          
             }
         98% {
             transform:translate(400px) scaleX(0);;
@@ -136,6 +147,21 @@
       }
   }
 
+  .gauntletReverse{
+    animation-name: gReverse;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes gReverse{
+      99%{
+           background-image: url('../../assets/snapReverse.gif');
+        }
+      100%{
+        background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_idle.png');
+      }
+  }
+
 
 
 
@@ -152,6 +178,10 @@
 
     .snapDiv .sukhImg{
         width: 60%;
+    }
+
+    .gauntlet{
+        bottom: 12rem;
     }
 
   }
