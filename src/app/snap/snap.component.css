@@ -140,7 +140,7 @@
     background-repeat: no-repeat;
     bottom: 20px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
     position:absolute;
     cursor: pointer;
 
@@ -148,7 +148,7 @@
 
   .gauntletRun{
     animation-name: gRun;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
   }
 
@@ -163,7 +163,7 @@
 
   .gauntletReverse{
     animation-name: gReverse;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
   }
 
@@ -199,7 +199,7 @@
     }
 
     .sukhdeep{
-        font-size: 7rem;
+        font-size: 6rem;
         top: 30%;
     }
 

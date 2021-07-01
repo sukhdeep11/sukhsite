@@ -1,8 +1,16 @@
 .sContainer {
     position: relative;
     background-color: white;
-    margin: 2rem 2rem 0 2rem;
+    /* margin: 2rem 2rem 0 2rem; */
     user-select: none;
+    background: url('../../../assets/colorful-palm-silhouettes-background.jpg');
+    /* border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .sMain{

@@ -3,8 +3,12 @@ h1 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     text-align: center;
-    
-           }
+    color: #FBCF5D;
+    background-image: linear-gradient(to top,#2E2C40,#2C293B,#2B2736,transparent);
+    margin-top: -6rem;
+    position: relative;
+    z-index: 9;
+}
 
 .s{
     background: url('../../../assets/s.jpg');
@@ -50,6 +54,7 @@ h1 {
 @media only screen and (max-width: 600px) {
     h1{
         font-size: calc(8vw + 3rem);
+        margin-top: -25rem;
        
     }
    
