@@ -11,7 +11,7 @@ import { PhotoSectionComponent } from './components/photo-section/photo-section.
 import { SliderComponent } from './components/slider/slider.component';
 import { ParallaxComponent } from './components/parallax/parallax.component';
 import { PxsuffixPipe } from './pipe/pxsuffix.pipe';
-import { SnapComponent } from './snap/snap.component';
+import { SnapComponent } from './components/snap/snap.component';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,7 @@
 .photoContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #2E2C40;
 }
 
 .photoContainer img{

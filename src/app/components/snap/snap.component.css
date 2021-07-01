@@ -154,7 +154,7 @@
 
   @keyframes gRun{
       99%{
-           background-image: url('../../assets/snap.gif');
+           background-image: url('../../../assets/snap.gif');
         }
       100%{
         background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_idle.png');
@@ -169,13 +169,23 @@
 
   @keyframes gReverse{
       99%{
-           background-image: url('../../assets/snapReverse.gif');
+           background-image: url('../../../assets/snapReverse.gif');
         }
       100%{
         background-image: url('https://www.google.com/logos/fnbx/thanos/thanos_idle.png');
       }
   }
 
+
+
+  /* AOS */
+
+  [data-aos="colorChange"] {
+    background-color: #2E2C40;
+    }
+    [data-aos="colorChange"].aos-animate {
+    background-color: white;
+    }
 
 
 
